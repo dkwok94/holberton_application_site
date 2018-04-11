@@ -1,0 +1,256 @@
+/*Body*/
+
+.social{
+    float: right;
+    margin: 0px 10px 0px 1px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: url('https://g3.img-dpreview.com/2ACB73891A2241B38B47EE65ED3626B4.jpg');
+    background-position: 50% 70%;
+    background-size: cover;
+}
+
+/*Main*/
+
+main{
+    display:flex;
+    flex-direction: row;
+    flex: auto;
+}
+
+/*Article*/
+
+article{
+    flex: 2;
+    overflow-y: auto;
+    background-color:#FFF8DC
+}
+
+/*Aside*/
+
+aside{
+    flex: 1;
+    overflow-y: auto;
+    background: tan;
+}
+
+/*Header*/
+
+header{
+    background-color: #A52A2A;
+    max-height: 20px;
+    min-height: 20px;
+}
+
+header a{
+    color: white;
+}
+
+header a:hover{
+    color: orange;
+}
+
+/*Footer*/
+
+footer{
+    background-color: #A52A2A;
+    max-height: 20px;
+    min-height: 20px;
+    color: white;
+}
+
+footer a{
+    color: white;
+}
+
+footer a:hover{
+    color: orange;
+}
+
+/*Borders*/
+
+.text_border{
+    border: #000000 2px solid;
+    border-radius: 10px;
+    background-color: #FFEBCD;
+    padding: 10px 10px;
+}
+
+/*Quiz*/
+
+.question{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    background-color: #FFEBCD;
+    padding: 5px 5px;
+}
+
+#submit{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    background-color: #A52A2A;
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Yeseva One', sans serif;
+}
+
+#submit:hover{
+    color: orange;
+}
+
+/*Images*/
+#good_luck{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#hieroglyphics{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#demotic{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    margin: 5px 10px 3px 5px;
+}
+
+#fluentforever{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#teachyourself{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#assimil_logo{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bilingual_texts{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#lingq_logo{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#glossika_logo{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: right;
+    margin: 5px 10px 3px 5px;
+}
+
+#anki_logo{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#italki_logo{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 5px 10px 3px 5px;
+}
+
+#fluentuyabla{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+#evolution_gif{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#pineapple{
+    border: #000000 1px solid;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.inline-block{
+    float: left;
+    margin: 0px 10px 5px 5px;
+}
+
+#language_banner{
+    vertical-align: middle;
+}
+
+.small{
+    border: #000000 2px solid;
+    border-radius: 5px;
+}
+
+#intro{
+    overflow: auto;
+}
+
+#teachyourself_div{
+    overflow: auto;
+}
+
+/*Russian Letters*/
+
+.letter{
+    font-size: 200%;
+    text-shadow: 0 0 2px Peru;
+}
+
+.letter:hover{
+    font-size: 300%;
+}
+
+iframe{
+    frameborder: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

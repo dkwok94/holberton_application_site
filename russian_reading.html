@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Russian Reading Practice and Quiz </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="behavior.js"></script>
+    <script src="quiz.js"></script>
+    <link href="https://www.holbertonschool.com/level2/holberton.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body class="works_on_smartphone">
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
+      fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
+    <header>
+      <div id="socialmedia" class="right">
+        <div class="social">
+        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://46.226.109.72" data-show-count="false">Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+	<div class="social"><div class="fb-share-button" data-href="http://46.226.109.72" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F46.226.109.72%2F&amp;src=sdkpreparse">Share</a></div>
+        </div>
+      </div>
+      <ul>
+        <li class="logo">&#129417;</li>
+	<li><a href="http://46.226.109.72">Home Page</a></li>
+	<li><a href="http://46.226.109.72/russian_alphabet.html">Russian Alphabet</a></li>
+	<li><a href="http://46.226.109.72/russian_reading.html">Russian Reading Quiz</a></li>
+	<li><a href="http://46.226.109.72/language_resources.html">Language Learning Resources</a></li>
+	<li><a href="http://46.226.109.72/tweets.html">Tweets</a></li>
+      </ul>
+    </header>
+     <main>
+       <article>
+	  <h1 id="instructions">Quiz Instructions</h1>
+	  <p>Based off of your knowledge of the Russian alphabet, read the word in each question and select the answer choice with the correct English phonetic spelling of the Russian word. I tried my best to sound out the words to match the sounds of the letters. For example, the answer to <strong>"&#1044;&#1077;&#1088;&#1077;&#1082;"</strong> would be "Derek". <strong>After completing the quiz and pressing "Submit", click the buttons that appear next to each question to listen to how each word sounds.</strong> Good luck!</p>
+	  <img id="good_luck" src="https://i.ytimg.com/vi/EvBWAsV_rF4/maxresdefault.jpg" width="533" height="300" alt="good_luck_rus"/>
+	  <hr/>
+
+<!--Question 1-->
+	  <p id="question_1"  class="question">1. Choose the correct English phonetic spelling of <strong>"&#1071;&#1073;&#1083;&#1086;&#1082;&#1086;" </strong>
+
+<!--The audio element does not have the controls property activated because I do not want the whole player to show up on the screen.-->
+
+	    <audio src="yabloko.mp3" id="yabloko"></audio>
+	  
+<!-- Created an empty span element with class=audio_file and several properties that are necessary to create clickable links to play an audio file in the audio element above. Since all of this code is already here, but is not visible to the user, the plan here was to put a method into my javascript code on the click event of the "Submit" button of the quiz so that the word "Play" would be inserted in all <a> elements with class="audio_file". This means that the following information will suddenly become accessible via an <a></a> tag series with an innerHTML of "Play". I did this for each question so that all audio files would show up when the user submits the form.-->
+
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('yabloko').play()"></a></span>
+	  </p>
+
+<!--The plan with all of these values was to refer to each set of answers by a common name. Additionally, the value was set to "correct" for the correct answer only. This would help in the Javascript code in determining whether what the user checked was the correct answer or not. The id corresponded to the question number and the letter name. The label that corresponds to the actual word answer has a "for" attribute that is equal to this. This equivalence will make it easier to refer to the label element and more importantly, the one that has a "for" property equal to the "id" property of the user's answer. It was mostly for book-keeping.-->
+
+	  <form method="POST" id="answers_1" class="answers">
+	    <input type="radio" name="q1" value="correct" id="q1a"><label for="q1a">"Yabloko"</label><br/>
+	    <input type="radio" name="q1" value="incorrect" id="q1b"><label for="q1b">"Privyet"</label><br/>
+	    <input type="radio" name="q1" value="incorrect" id="q1c"><label for="q1c">"Ekran"</label><br/>
+	    <input type="radio" name="q1" value="incorrect" id="q1d"><label for="q1d">"Oodochka"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 2-->
+	  <p id="question_2"  class="question">2. Choose the correct English phonetic spelling of <strong>"&#1055;&#1088;&#1080;&#1074;&#1077;&#1090;" </strong>
+	    <audio src="preevyet.mp3" id="preevyet"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('preevyet').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_2" class="answers">
+	    <input type="radio" name="q2" value="incorrect" id="q2a"><label for="q2a">"Noski"</label><br/>
+	    <input type="radio" name="q2" value="incorrect" id="q2b"><label for="q2b">"Limon"</label><br/>
+	    <input type="radio" name="q2" value="incorrect" id="q2c"><label for="q2c">"Kloobnika"</label><br/>
+	    <input type="radio" name="q2" value="correct" id="q2d"><label for="q2d">"Preevyet"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 3-->
+	  <p id="question_3"  class="question">3. Choose the correct English phonetic spelling of <strong>"&#1056;&#1086;&#1089;&#1089;&#1080;&#1103;" </strong>
+	    <audio src="rossiya.mp3" id="rossiya"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('rossiya').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_3"  class="answers">
+	    <input type="radio" name="q3" value="incorrect" id="q3a"><label for="q3a">"Rooski"</label><br/>
+	    <input type="radio" name="q3" value="correct" id="q3b"><label for="q3b">"Rossiya"</label><br/>
+	    <input type="radio" name="q3" value="incorrect" id="q3c"><label for="q3c">"Moskva"</label><br/>
+	    <input type="radio" name="q3" value="incorrect" id="q3d"><label for="q3d">"Beograd"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 4-->
+	  <p id="question_4"  class="question">4. Choose the correct English phonetic spelling of <strong>"&#1047;&#1076;&#1088;&#1072;&#1074;&#1089;&#1090;&#1074;&#1091;&#1081;&#1090;&#1077;" </strong>
+	    <audio src="zdrastvooyte.mp3" id="zdrastvooyte"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('zdrastvooyte').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_4"  class="answers">
+	    <input type="radio" name="q4" value="incorrect" id="q4a"><label for="q4a">"Dovizhenya"</label><br/>
+	    <input type="radio" name="q4" value="incorrect" id="q4b"><label for="q4b">"Dosvidaniya"</label><br/>
+	    <input type="radio" name="q4" value="correct" id="q4c"><label for="q4c">"Zdrastvooyte"</label><br/>
+	    <input type="radio" name="q4" value="incorrect" id="q4d"><label for="q4d">"Spokoynoy"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 5-->
+	  <p id="question_5"  class="question">5. Choose the correct English phonetic spelling of <strong>"&#1040;&#1085;&#1075;&#1083;&#1080;&#1081;&#1089;&#1082;&#1080;" </strong>
+	    <audio src="angleeyskee.mp3" id="angleeyskee"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('angleeyskee').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_5"  class="answers">
+	    <input type="radio" name="q5" value="correct" id="q5a"><label for="q5a">"Angleeyskee"</label><br/>
+	    <input type="radio" name="q5" value="incorrect" id="q5b"><label for="q5b">"Porooskiee"</label><br/>
+	    <input type="radio" name="q5" value="incorrect" id="q5c"><label for="q5c">"Eezveeneetye"</label><br/>
+	    <input type="radio" name="q5" value="incorrect" id="q5d"><label for="q5d">"Pozhalooysta"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 6-->
+	  <p id="question_6"  class="question">6. Choose the correct English phonetic spelling of <strong>"&#1055;&#1086;&#1078;&#1072;&#1083;&#1091;&#1081;&#1089;&#1090;&#1072;" </strong>
+	    <audio src="pozhalooysta.mp3" id="pozhalooysta"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('pozhalooysta').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_6"  class="answers">
+	    <input type="radio" name="q6" value="correct" id="q6a"><label for="q6a">"Pozhalooysta"</label><br/>
+	    <input type="radio" name="q6" value="incorrect" id="q6b"><label for="q6b">"Pozhdestvom"</label><br/>
+	    <input type="radio" name="q6" value="incorrect" id="q6c"><label for="q6c">"Pozdravlyayoo"</label><br/>
+	    <input type="radio" name="q6" value="incorrect" id="q6d"><label for="q6d">"Nedostatochno"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 7-->
+	  <p id="question_7"  class="question">7. Choose the correct English phonetic spelling of <strong>"&#1061;&#1086;&#1088;&#1086;&#1096;&#1086;" </strong>
+	    <audio src="khorosho.mp3" id="khorosho"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('khorosho').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_7"  class="answers">
+	    <input type="radio" name="q7" value="correct" id="q7a"><label for="q7a">"Khorosho"</label><br/>
+	    <input type="radio" name="q7" value="incorrect" id="q7b"><label for="q7b">"Oodachi"</label><br/>
+	    <input type="radio" name="q7" value="incorrect" id="q7c"><label for="q7c">"Priyatnogo"</label><br/>
+	    <input type="radio" name="q7" value="incorrect" id="q7d"><label for="q7d">"Schastlivogo"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 8-->
+	  <p id="question_8"  class="question">8. Choose the correct English phonetic spelling of <strong>"&#1052;&#1086;&#1089;&#1082;&#1074;&#1072;" </strong>
+	    <audio src="moskva.mp3" id="moskva"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('moskva').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_8"  class="answers">
+	    <input type="radio" name="q8" value="incorrect" id="q8a"><label for="q8a">"Kazan"</label><br/>
+	    <input type="radio" name="q8" value="incorrect" id="q8b"><label for="q8b">"Samara"</label><br/>
+	    <input type="radio" name="q8" value="incorrect" id="q8c"><label for="q8c">"Voronezh"</label><br/>
+	    <input type="radio" name="q8" value="correct" id="q8d"><label for="q8d">"Moskva"</label><br/>
+	  </form>
+	  <br/>
+
+<!--Question 9-->
+	  <p id="question_9"  class="question">9. Choose the correct English phonetic spelling of <strong>"&#1042;&#1083;&#1072;&#1076;&#1080;&#1084;&#1080;&#1088;" </strong>
+	    <audio src="vladimir.mp3" id="vladimir"></audio>
+	    <span><a class="audio_file" href="#" onclick="document.getElementById('vladimir').play()"></a></span>
+	  </p>
+	  <form method="POST" id="answers_9"  class="answers">
+	    <input type="radio" name="q9" value="correct" id="q9a"><label for="q9a">"Vladimir"</label><br/>
+	    <input type="radio" name="q9" value="incorrect" id="q9b"><label for="q9b">"Svetlana"</label><br/>
+	    <input type="radio" name="q9" value="incorrect" id="q9c"><label for="q9c">"Dmitri"</label><br/>
+	    <input type="radio" name="q9" value="incorrect" id="q9d"><label for="q9d">"Yuliana"</label><br/>
+	  </form>
+	  <br/>
+	  <br/>
+
+<!--Submit Button-->
+	  <button id="submit">Submit Answers</button>
+	  <br/>
+	  <br/>
+	  <div id="results"></div>
+	  <div id="score"></div>
+       </article>
+
+<!--Disqus Thread-->
+       <aside>
+	 <div id="disqus_thread"></div>
+	 <script>
+
+	   var disqus_config = function () {
+	   this.page.url = 'http://46.226.109.72/russian_reading.html';
+	   this.page.identifier = 'russianreadingquiz';
+	   };
+	   
+	   (function() {
+	   var d = document, s = d.createElement('script');
+	   s.src = 'https://dereks-stuff.disqus.com/embed.js';
+	   s.setAttribute('data-timestamp', +new Date());
+	   (d.head || d.body).appendChild(s);
+	   })();
+	 </script>
+	 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+       </aside>
+     </main>
+     <footer>
+       <p>Made by <a href="https://twitter.com/dkwok94" target="_blank">Derek Kwok</a> for <a href="https://www.holbertonschool.com" target="_blank">Holberton School</a></p>
+     </footer>
+  </body>
+</html>
